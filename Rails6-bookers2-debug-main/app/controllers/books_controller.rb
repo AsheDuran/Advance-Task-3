@@ -5,7 +5,7 @@ class BooksController < ApplicationController
   def show
     @book = Book.find(params[:id])
     @book_new = Book.new
-    @book_comment = BookComment.new#モデル大文字にしたっけ？
+    @book_comment = BookComment.new#モデル大文字にしたっけ？多分,Book_controllerで作成したから大文字
     @user = @book.user
   end
 
